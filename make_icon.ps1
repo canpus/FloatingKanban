@@ -15,7 +15,7 @@ function New-IconBitmap([int]$s) {
   $path.AddArc(($s - $d), ($s - $d), $d, $d, 0, 90)
   $path.AddArc(0, ($s - $d), $d, $d, 90, 90)
   $path.CloseFigure()
-  $bg = New-Object System.Drawing.SolidBrush ([System.Drawing.Color]::FromArgb(255, 79, 140, 255))
+  $bg = New-Object System.Drawing.SolidBrush ([System.Drawing.Color]::FromArgb(255, 79, 110, 247))
   $g.FillPath($bg, $path)
   $bg.Dispose()
   $path.Dispose()
